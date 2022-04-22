@@ -58,6 +58,12 @@ Users_data = {
         "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
     }
 }
+@app.get("/")
+def welcome():
+  return {"Welcome"}
+
+
+
 @app.get("/user/")
 def fun():
   return Users_data
